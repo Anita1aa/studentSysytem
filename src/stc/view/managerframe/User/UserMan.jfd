@@ -1,0 +1,114 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "stc.view"
+	"i18n.bundleName": "test"
+	"i18n.keyPrefix": "UserMan"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:80:p, par l {seq l {par t {comp label2:::p::p, comp label4:::p::p}, space :p::p, comp label5:::p::p, space u:::p, par l:::p {seq {comp textFieldUname2:::p:150:p, space s:::p, comp label8:::p::p, space s:::p, comp textFieldPassword:::p:150:p}, seq {comp button6:::p:150:p, space :::x, comp button5:::p:150:p}}}, par t:l {comp scrollPane2:::p:570:p, seq {comp label1:::p::p, space s:::p, comp label3:::p::p, space :::p, comp textFieldUname:::p:150:p, space :p:72:p, comp button3:::p:150:p}}}, space ::59:x}}"
+			"$verticalGroup": "par l {seq l {space :p:34:p, par b {comp label3::b:p::p, comp label1::b:p::p, comp textFieldUname::b:p::p, comp button3::b:p::p}, space :p:60:p, comp scrollPane2:::p:481:p, space ::85:x, par b {comp label8::b:p::p, comp textFieldUname2::b:p::p, comp label5::b:p::p, comp label4::b:p::p, comp textFieldPassword::b:p::p}, space :p:32:p, par t {comp label2:::p::p, par b {comp button6::b:p::p, comp button5::b:p::p}}, space :p:63:p}}"
+		} ) {
+			name: "frame2"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/image/school.jpg" )
+			"title": new FormMessage( null, "UserMan.frame2.title" )
+			"font": new java.awt.Font( "Dialog", 0, 40 )
+			"minimumSize": new java.awt.Dimension( 800, 900 )
+			"preferredSize": new java.awt.Dimension( 800, 900 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "UserMan.label1.text" )
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tableUser"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "序号" )
+						add( "用户名" )
+						add( "密码" )
+					}, new java.util.Vector {
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+					}, new java.util.Vector {
+						add( null )
+						add( true )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 50, 0, 0, true ) )
+						add( null )
+					} )
+					"alignmentX": 10.0f
+					"alignmentY": 7.0f
+					"rowHeight": 50
+					"rowMargin": 0
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "table1MousePressed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+				"text": new FormMessage( null, "UserMan.button3.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selectUser", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldUname"
+				"font": &SwingDerivedFont2 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"font": #SwingDerivedFont1
+				"text": new FormMessage( null, "UserMan.button5.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "updatepassword", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "UserMan.label3.text" )
+				"font": &SwingDerivedFont3 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "UserMan.label2.text" )
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "UserMan.label4.text" )
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldUname2"
+				"font": #SwingDerivedFont2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldPassword"
+				"font": #SwingDerivedFont2
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "UserMan.label5.text" )
+				"font": #SwingDerivedFont3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": new FormMessage( null, "UserMan.label8.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"font": #SwingDerivedFont1
+				"text": new FormMessage( null, "UserMan.button6.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "setagain", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 715, 900 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

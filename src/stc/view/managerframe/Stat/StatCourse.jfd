@@ -1,0 +1,94 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "stc.view"
+	"i18n.bundleName": "test"
+	"i18n.keyPrefix": "StatCourse"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:65:p, par t {comp scrollPane2:::p:721:p, seq {comp label3:::p::p, space :p:12:p, comp label5:::p::p, space s:::p, comp textFieldCno:::p:125:p, space :p:31:p, comp label6:::p::p, space :p:25:p, comp textFieldCname:::p:125:p, space s:::p, comp button3:::p::p}}, space :0:62:x}}"
+			"$verticalGroup": "par l {seq l {space :p:48:p, par b {comp label3::b:p::p, comp label5::b:p::p, comp textFieldCno::b:p::p, comp label6::b:p::p, comp textFieldCname::b:p::p, comp button3::b:p::p}, space :p:67:p, comp scrollPane2:::p:481:p, space ::89:x}}"
+		} ) {
+			name: "frame2"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/image/school.jpg" )
+			"title": new FormMessage( null, "StatCourse.frame2.title" )
+			"font": new java.awt.Font( "Dialog", 0, 40 )
+			"minimumSize": new java.awt.Dimension( 910, 780 )
+			"preferredSize": new java.awt.Dimension( 910, 780 )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tableCGstat"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "序号" )
+						add( "课程号" )
+						add( "课程名" )
+						add( "平均分" )
+						add( "最低分" )
+						add( "最高分" )
+					}, new java.util.Vector {
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+					}, new java.util.Vector {
+						add( null )
+						add( true )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 50, 0, 0, true ) )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"alignmentX": 10.0f
+					"alignmentY": 7.0f
+					"rowHeight": 50
+					"rowMargin": 0
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+				"text": new FormMessage( null, "StatCourse.button3.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "StatSelect", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "StatCourse.label3.text" )
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "StatCourse.label5.text" )
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldCno"
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": new FormMessage( null, "StatCourse.label6.text" )
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldCname"
+				"font": #SwingDerivedFont1
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 850, 755 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

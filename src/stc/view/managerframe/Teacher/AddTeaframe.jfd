@@ -1,0 +1,92 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "stc.view"
+	"i18n.bundleName": "test"
+	"i18n.keyPrefix": "AddTeaframe"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:250:p, comp label7:::p::p}, seq {space :p:75:p, par l:::p {seq {comp button1:::p:112:p, space :p:97:p, comp button2:::p:112:p, space ::95:x, comp button3:::p:112:p}, seq {par t {comp label1::t:p::p, comp label2::t:p::p, comp label5::t:p::p, comp label6::t:p::p}, space :p:40:p, par t:::p {comp textFieldTname::l::440:x, comp textFieldTno::l::440:x, comp comboBoxTetitle::l::440:x, comp textFieldTsalary::t::440:x}}}}}, space ::85:x}}"
+			"$verticalGroup": "par l {seq {space :p:45:p, comp label7:::p::p, space :p:45:p, par l {comp label1:::p::p, comp textFieldTno:::p::p}, space :p:40:p, par l {comp label2:::p::p, comp textFieldTname:::p::p}, space :p:39:p, par b {comp label5::b:p::p, comp comboBoxTetitle::b:p::p}, space :p:40:p, par b {comp label6::b:p::p, comp textFieldTsalary::b:p::p}, space ::142:x}, seq t {space ::450:x, par b {comp button2::b:p::p, comp button1::b:p::p, comp button3::b:p::p}, space :p:60:p}}"
+		} ) {
+			name: "frame1"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/image/school.jpg" )
+			"title": new FormMessage( null, "AddTeaframe.frame1.title" )
+			"font": new java.awt.Font( "Dialog", 0, 20 )
+			"minimumSize": new java.awt.Dimension( 690, 620 )
+			"preferredSize": new java.awt.Dimension( 690, 620 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "AddTeaframe.label1.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "AddTeaframe.label2.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "AddTeaframe.label5.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": new FormMessage( null, "AddTeaframe.label6.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": new FormMessage( null, "AddTeaframe.label7.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 17, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldTno"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldTname"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldTsalary"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBoxTetitle"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "---请选择---"
+					addElement( "---请选择---" )
+					addElement( "教授" )
+					addElement( "副教授" )
+					addElement( "讲师" )
+					addElement( "助教" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "AddTeaframe.button1.text" )
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 13, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AddTea", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": new FormMessage( null, "AddTeaframe.button2.text" )
+				"font": #SwingDerivedFont0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "setagain", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": new FormMessage( null, "AddTeaframe.button3.text" )
+				"font": #SwingDerivedFont0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitAddTea", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 690, 580 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

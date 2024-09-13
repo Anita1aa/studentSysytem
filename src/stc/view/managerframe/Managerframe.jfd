@@ -1,0 +1,125 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "stc.view"
+	"i18n.bundleName": "test"
+	"i18n.keyPrefix": "Managerframe"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp label1::l::783:x}"
+			"$verticalGroup": "par l {comp label1::l::486:x}"
+			"honorsVisibility": false
+		} ) {
+			name: "MJframe"
+			"title": new FormMessage( null, "MJframe.Managerframe.title" )
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/image/school.jpg" )
+			"minimumSize": new java.awt.Dimension( 1200, 800 )
+			"preferredSize": new java.awt.Dimension( 1200, 800 )
+			"font": new java.awt.Font( "Dialog", 1, 20 )
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "ManagerframeClosing", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/image/hogwarts.jpg" )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar3"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": new FormMessage( null, "MJframe.menu2.text" )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem4"
+						"text": new FormMessage( null, "MJframe.menuItem4.text" )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "StuBaseMess", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": new FormMessage( null, "MJframe.menuItem1.text" )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SCmess", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": new FormMessage( null, "MJframe.menu3.text" )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem6"
+						"text": new FormMessage( null, "MJframe.menuItem6.text" )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "TeacherMess", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem7"
+						"text": new FormMessage( null, "MJframe.menuItem7.text" )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "TCMess", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu5"
+					"text": new FormMessage( null, "MJframe.menu5.text" )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem16"
+						"text": new FormMessage( null, "MJframe.menuItem16.text" )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CourseMess", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": new FormMessage( null, "MJframe.menuItem2.text" )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "GradeAdd", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu4"
+					"text": new FormMessage( null, "Managerframe.menu4.text" )
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 24 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": new FormMessage( null, "Managerframe.menuItem3.text" )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SCstat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem5"
+						"text": new FormMessage( null, "Managerframe.menuItem5.text" )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CourseStat", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem8"
+						"text": new FormMessage( null, "Managerframe.menuItem8.text" )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "TSstat", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": new FormMessage( null, "MJframe.menu1.text" )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem9"
+						"text": new FormMessage( null, "Managerframe.menuItem9.text" )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Manpassupdate", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem10"
+						"text": new FormMessage( null, "Managerframe.menuItem10.text" )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "UserManger", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 785, 555 )
+		} )
+	}
+}

@@ -1,0 +1,113 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "stc.view"
+	"i18n.bundleName": "test"
+	"i18n.keyPrefix": "TCMessframe"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:65:p, par t {comp scrollPane2:::p:797:p, seq {par l {comp label5:::p::p, comp label1:::p::p}, space :p:34:p, par l {comp label2:::p::p, comp label3:::p::p}, space u:::p, par l {comp textFieldCno::l:p:138:p, comp textFieldTno::l:p:138:p}, space s:::p, par l {comp label6:::p::p, comp label4:::p::p}, space u:::p, par l {comp textFieldCname:::p:138:p, seq {comp textFieldTname:::p:138:p, space :p:60:p, comp button3:::p:138:p}}}}, space ::51:x}}"
+			"$verticalGroup": "par l {seq l {space :p:34:p, par b {comp label1::b:p::p, comp textFieldCno::b:p::p, comp label2::b:p::p, comp label4::b:p::p, comp textFieldCname::b:p::p}, space s:::p, par b {comp textFieldTno::b:p::p, comp textFieldTname::b:p::p, comp label5::b:p::p, comp label3::b:p::p, comp label6::b:p::p, comp button3::b:p::p}, space :p:43:p, comp scrollPane2:::p:481:p, space ::70:x}}"
+		} ) {
+			name: "frame2"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/image/school.jpg" )
+			"title": new FormMessage( null, "TCMessframe.frame2.title" )
+			"font": new java.awt.Font( "Dialog", 0, 40 )
+			"minimumSize": new java.awt.Dimension( 980, 800 )
+			"preferredSize": new java.awt.Dimension( 980, 800 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "TCMessframe.label1.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "TCMessframe.label2.text" )
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tableTCmess"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "工号" )
+						add( "姓名" )
+						add( "课程号" )
+						add( "课程名" )
+						add( "课程学分" )
+					}, new java.util.Vector {
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+					}, new java.util.Vector {
+						add( true )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( new com.jformdesigner.model.SwingTableColumn( null, 50, 0, 0, true ) )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"alignmentX": 10.0f
+					"alignmentY": 7.0f
+					"rowHeight": 50
+					"rowMargin": 0
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+				"text": new FormMessage( null, "TCMessframe.button3.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selectTCmess", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldCno"
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "TCMessframe.label5.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldTname"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldCname"
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldTno"
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "TCMessframe.label4.text" )
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "TCMessframe.label3.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": new FormMessage( null, "TCMessframe.label6.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 915, 755 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

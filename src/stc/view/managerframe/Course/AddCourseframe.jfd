@@ -1,0 +1,84 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "stc.view"
+	"i18n.bundleName": "test"
+	"i18n.keyPrefix": "AddCourse"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:250:p, comp label7:::p::p}, par t:l::p {seq t {space :p:78:p, comp button1:::p:112:p, space :::x, comp button2:::p:112:p, space :p:88:p, comp button3:::p:112:p}, seq l {par l {par l {seq t {space :::p, par l {comp label1:::p::p, comp label2:::p::p}, space :p:24:p}, seq l {space :p:61:p, comp label3:::p::p, space :p:14:p}}, seq l {space :p:31:p, comp label4:::p::p}}, space :p:23:p, par t {par t:::p {comp textFieldCname::l::400:x, comp textFieldCno::l::400:x, comp textFieldCredit::::400:x}, comp textFieldTea:::p:400:p}}}}, space ::90:x}}"
+			"$verticalGroup": "par l {seq l {space :p:45:p, comp label7:::p::p, space :p:45:p, par b {comp label1::b:p::p, comp textFieldCno::b:p::p}, space :p:40:p, par b {comp label2::b:p::p, comp textFieldCname::b:p::p}, space :p:39:p, par b {comp label3::b:p::p, comp textFieldCredit::b:p::p}, space :p:47:p, par b {comp textFieldTea::b:p::p, comp label4::b:p::p}, space ::56:x, par b {comp button1::b:p::p, comp button3::b:p::p, comp button2::b:p::p}, space :p:55:p}}"
+		} ) {
+			name: "frame1"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/image/school.jpg" )
+			"title": new FormMessage( null, "AddCourse.frame1.title" )
+			"font": new java.awt.Font( "Dialog", 0, 20 )
+			"minimumSize": new java.awt.Dimension( 690, 600 )
+			"preferredSize": new java.awt.Dimension( 690, 600 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "AddCourse.label1.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "AddCourse.label2.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "AddCourse.label3.text" )
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": new FormMessage( null, "AddCourse.label7.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 17, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldCno"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldCname"
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "AddCourse.button1.text" )
+				"font": &SwingDerivedFont2 new com.jformdesigner.model.SwingDerivedFont( null, 0, 13, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AddCourse", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": new FormMessage( null, "AddCourse.button2.text" )
+				"font": #SwingDerivedFont2
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "setagain", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": new FormMessage( null, "AddCourse.button3.text" )
+				"font": #SwingDerivedFont2
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitAddframe", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldCredit"
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "AddCourse.label4.text" )
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldTea"
+				"font": #SwingDerivedFont1
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 690, 595 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

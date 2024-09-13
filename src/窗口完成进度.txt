@@ -1,0 +1,25 @@
+ManagerFrame：
+1、AddStuframe           +++
+2、CourseGradeframe
+3、CourseMessframe
+4、Managerframe         +++
+5、ManUser            +++
+6、SCMessframe          +++
+7、StatCourse            +++
+8、StatSC                 ++++
+9、StatTea            +++++
+10、StudentMessframe
+11、TCMessframe
+12、TeacherMessframe
+13、AddTeaframe                +++
+14、AddCourse                   +++
+15、UserMan
+
+StudentFrame：
+1、SCGframe                  +++
+2、SCselect
+3、Studentframe           +++
+4、StuMessframe             ++++
+5、StuUser                  +++
+
+Loginframe+++

@@ -1,0 +1,127 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "stc.view"
+	"i18n.bundleName": "test"
+	"i18n.keyPrefix": "StatTea"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:70:p, par l {comp scrollPane2:::p:545:p, seq {comp label2:::p::p, space :::p, comp label8:::p::p, space s:::p, comp comboBoxTitle:::p::p, space :p:53:p, comp button3:::p:146:p}}, space :0:63:x}}"
+			"$verticalGroup": "par l {seq l {space :p:35:p, par b {comp label2::b:p::p, comp label8::b:p::p, comp comboBoxTitle::b:p::p, comp button3::b:p::p}, space ::59:x, comp scrollPane2:::p:481:p, space :p:40:p}}"
+		} ) {
+			name: "frame2"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/image/school.jpg" )
+			"title": new FormMessage( null, "StatTea.frame2.title" )
+			"font": new java.awt.Font( "Dialog", 0, 40 )
+			"minimumSize": new java.awt.Dimension( 680, 710 )
+			"preferredSize": new java.awt.Dimension( 680, 710 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "StatTea.label2.text" )
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tableTitle"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "职称" )
+						add( "教师数量" )
+						add( "平均工资" )
+					}, new java.util.Vector {
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+					}, new java.util.Vector {
+						add( true )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( new com.jformdesigner.model.SwingTableColumn( null, 50, 0, 0, true ) )
+						add( null )
+						add( null )
+					} )
+					"alignmentX": 10.0f
+					"alignmentY": 7.0f
+					"rowHeight": 50
+					"rowMargin": 0
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+				"text": new FormMessage( null, "StatTea.button3.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "StatTitle", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": new FormMessage( null, "StatTea.label8.text" )
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBoxTitle"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "--请选择--"
+					addElement( "--请选择--" )
+					addElement( "教授" )
+					addElement( "副教授" )
+					addElement( "讲师" )
+					addElement( "助教" )
+				}
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 680, 685 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

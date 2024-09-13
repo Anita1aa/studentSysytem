@@ -1,0 +1,171 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "stc.view"
+	"i18n.bundleName": "test"
+	"i18n.keyPrefix": "Gradeaddframe"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :0:59:x, par t {comp scrollPane2:::p:781:p, par l:::p {seq {par t {seq {comp label6:::p::p, space :::p, comp label8:::p::p}, comp label7:::p::p}, space :::p, par l:::p {seq {comp textFieldSno2:::p:138:p, space :::x, comp label9:::p::p}, seq {comp textFieldCno2:::p:138:p, space :p:27:p, comp label10:::p::p}}, space :::p, par l {seq {comp textFieldSname2:::p:138:p, space :p:36:p, comp label11:::p::p, space :::x, comp textFieldGrade:::p:138:p}, seq {comp textFieldCname2:::p:138:p, space :::x, comp button6:::p:138:p}}}, seq {par l {seq l {comp label1:::p::p, space :p:34:p, comp label2:::p::p}, comp label3::l:p::p}, space :::p, par l {seq l {comp textFieldCno:::p:138:p, space :p:12:p, comp label4:::p::p}, comp button3::l:p:138:p}, space :::p, par l {comp button5:::p:138:p, seq {comp textFieldCname:::p:138:p, space :p:12:p, comp label5:::p::p, space :::p, comp textFieldCredit:::p:138:p}}}}}, space ::73:x}}"
+			"$verticalGroup": "par l {seq l {space :p:34:p, par b {comp label1::b:p::p, comp label2::b:p::p, comp textFieldCname::b:p::p, comp textFieldCno::b:p::p, comp label4::b:p::p, comp textFieldCredit::b:p::p, comp label5::b:p::p}, space :p:29:p, par b {comp label3::b:p::p, comp button3::b:p::p, comp button5::b:p::p}, space ::36:x, comp scrollPane2:::p::p, space :p:36:p, par b {comp label6::b:p::p, comp label8::b:p::p, comp textFieldSno2::b:p::p, comp label11::b:p::p, comp textFieldSname2::b:p::p, comp label9::b:p::p, comp textFieldGrade::b:p::p}, space :p:38:p, par b {comp label7::b:p::p, comp textFieldCno2::b:p::p, comp textFieldCname2::b:p::p, comp label10::b:p::p, comp button6::b:p::p}, space :p:60:p}}"
+		} ) {
+			name: "frame2"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/image/school.jpg" )
+			"title": new FormMessage( null, "Gradeaddframe.frame2.title" )
+			"font": new java.awt.Font( "Dialog", 0, 40 )
+			"minimumSize": new java.awt.Dimension( 980, 880 )
+			"preferredSize": new java.awt.Dimension( 980, 880 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "Gradeaddframe.label1.text" )
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "Gradeaddframe.label2.text" )
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tableSCgrade"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "学号" )
+						add( "姓名" )
+						add( "课程号" )
+						add( "课程名" )
+						add( "课程学分" )
+						add( "成绩" )
+					}, new java.util.Vector {
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( null )
+						add( class java.lang.String )
+						add( class java.lang.String )
+					}, new java.util.Vector {
+						add( true )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( new com.jformdesigner.model.SwingTableColumn( null, 50, 0, 0, true ) )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"alignmentX": 10.0f
+					"alignmentY": 7.0f
+					"rowHeight": 50
+					"rowMargin": 0
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "tableSCgradeMousePressed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"font": &SwingDerivedFont2 new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+				"text": new FormMessage( null, "Gradeaddframe.button3.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selectGrade", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldCno"
+				"font": &SwingDerivedFont3 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"font": #SwingDerivedFont2
+				"text": new FormMessage( null, "Gradeaddframe.button5.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "setagain", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldCname"
+				"font": #SwingDerivedFont3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "Gradeaddframe.label4.text" )
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"font": #SwingDerivedFont2
+				"text": new FormMessage( null, "Gradeaddframe.button6.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "setGrade", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "Gradeaddframe.label3.text_2" )
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "Gradeaddframe.label5.text" )
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldCredit"
+				"font": #SwingDerivedFont3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": new FormMessage( null, "Gradeaddframe.label6.text" )
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": new FormMessage( null, "Gradeaddframe.label7.text" )
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": new FormMessage( null, "Gradeaddframe.label8.text" )
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": new FormMessage( null, "Gradeaddframe.label9.text" )
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": new FormMessage( null, "Gradeaddframe.label10.text" )
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": new FormMessage( null, "Gradeaddframe.label11.text" )
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldSno2"
+				"font": #SwingDerivedFont3
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldCno2"
+				"font": #SwingDerivedFont3
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldSname2"
+				"font": #SwingDerivedFont3
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldGrade"
+				"font": #SwingDerivedFont3
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldCname2"
+				"font": #SwingDerivedFont3
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 915, 845 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

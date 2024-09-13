@@ -1,0 +1,108 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "stc.view"
+	"i18n.bundleName": "test"
+	"i18n.keyPrefix": "StuMessframe"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :75:75:p, par t {comp label1::t:p::p, comp label2::t:p::p, comp label3::t:p::p, comp label4::t:p::p, comp label5::t:p::p}, par l {seq l {space :p:49:p, comp radioButton1:::p::p, space :p:163:p, comp radioButton2:::p::p}, seq l {space :p:40:p, par t {comp textFieldSage:::p:440:p, par t:::p {comp comboBoxSdept::l::440:x, comp textFieldSno::l::440:x, seq l {comp button1:::p:112:p, space :::x, comp button2:::p:112:p, space :p:75:p}, comp textFieldSname::l::440:x}}}}}, seq l {space :p:275:p, comp label7:::p::p}}, space ::85:x}}"
+			"$verticalGroup": "par l {seq l {space :p:47:p, comp label7:::p::p, space :p:43:p, par l {comp label1:::p::p, comp textFieldSno:::p::p}, space :p:40:p, par l {comp label2:::p::p, comp textFieldSname:::p::p}, space :p:40:p, par b {comp label3::b:p::p, comp radioButton1::b:p::p, comp radioButton2::b:p::p}, space :p:55:p, par l {comp label4:::p::p, comp textFieldSage:::p::p}, space :p:41:p, par b {comp label5::b:p::p, comp comboBoxSdept::b:p::p}, space ::66:x, par b {comp button1::b:p::p, comp button2::b:p::p}, space :p:67:p}}"
+		} ) {
+			name: "frame1"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/image/school.jpg" )
+			"title": new FormMessage( null, "StuMessframe.frame1.title" )
+			"font": new java.awt.Font( "Dialog", 0, 20 )
+			"minimumSize": new java.awt.Dimension( 690, 720 )
+			"preferredSize": new java.awt.Dimension( 690, 720 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "StuMessframe.label1.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "StuMessframe.label2.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "StuMessframe.label3.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "StuMessframe.label4.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "StuMessframe.label5.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": new FormMessage( null, "StuMessframe.label7.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 17, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldSno"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldSname"
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBoxSdept"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "---请选择---"
+					addElement( "---请选择---" )
+					addElement( "格兰芬多" )
+					addElement( "斯莱特林" )
+					addElement( "拉文克劳" )
+					addElement( "赫奇帕奇" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "StuMessframe.button1.text" )
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 13, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "updatestu", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": new FormMessage( null, "StuMessframe.button2.text" )
+				"font": #SwingDerivedFont1
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancleupdate", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton1"
+				"text": new FormMessage( null, "StuMessframe.radioButton1.text" )
+				"font": &SwingDerivedFont2 new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton2"
+				"text": new FormMessage( null, "StuMessframe.radioButton2.text" )
+				"font": #SwingDerivedFont2
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldSage"
+				"font": #SwingDerivedFont0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 690, 705 )
+			"location": new java.awt.Point( 0, 25 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 746 )
+		} )
+	}
+}

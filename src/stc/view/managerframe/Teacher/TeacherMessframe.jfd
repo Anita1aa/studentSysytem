@@ -1,0 +1,173 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "stc.view"
+	"i18n.bundleName": "test"
+	"i18n.keyPrefix": "TeacherMess"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:70:p, par l {seq {comp label1:::p::p, space s:::p, comp label6:::p::p, space s:::p, comp textFieldTno:::p:159:p, space :p:51:p, comp label2:::p::p, space s:::p, comp textFieldTname:::p:160:p, space ::29:x, comp label3:::p::p, space s:::p, comp comboBoxTetile:::p:182:p}, seq l {par l {comp label4::l:p::p, comp label5::l:p::p}, space :p:32:p, comp label9:::p::p, space u:::p, par t {comp buttonSelect:::p:100:p, comp textFieldTno2:::p:100:p}, par t:::p {seq t {space s:::p, comp label7:::p::p, space :::p, comp textFieldTname2:::p:100:p, space s:::p, comp label8:::p::p, space u:::p, comp comboBoxTetile2:::p:157:p}, seq t {space :p:97:p, comp buttonUpdate:::p:100:p, space :::x, comp buttonDelete:::p:100:p}}, space ::42:x, par l {seq t {comp label10:::p::p, space u:::p, comp textFieldTSalary:::p:100:p}, comp buttonAdd::t:p:100:p}}, comp scrollPane2::t:::x}, space :p:68:p}}"
+			"$verticalGroup": "par l {seq l {space :p:34:p, par b {comp label1::b:p::p, comp label6::b:p::p, comp textFieldTno::b:p::p, comp textFieldTname::b:p::p, comp label2::b:p::p, comp comboBoxTetile::b:p::p, comp label3::b:p::p}, space :p:60:p, comp scrollPane2:::p::p, space :p:75:p, par b {comp label4::b:p::p, comp textFieldTSalary::b:p::p, comp label10::b:p::p, comp comboBoxTetile2::b:p::p, comp label8::b:p::p, comp textFieldTname2::b:p::p, comp label7::b:p::p, comp textFieldTno2::b:p::p, comp label9::b:p::p}, space :p:36:p, par b {comp label5::b:p::p, comp buttonAdd::b:p::p, comp buttonDelete::b:p::p, comp buttonSelect::b:p::p, comp buttonUpdate::b:p::p}, space ::72:x}}"
+		} ) {
+			name: "frame2"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/image/school.jpg" )
+			"title": new FormMessage( null, "TeacherMess.frame2.title" )
+			"font": new java.awt.Font( "Dialog", 0, 40 )
+			"minimumSize": new java.awt.Dimension( 1050, 900 )
+			"preferredSize": new java.awt.Dimension( 1050, 900 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "TeacherMess.label1.text" )
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "TeacherMess.label2.text" )
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "TeacherMess.label3.text" )
+				"font": &SwingDerivedFont2 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tableTeaMess"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "序号" )
+						add( "工号" )
+						add( "姓名" )
+						add( "职称" )
+						add( "工资" )
+					}, new java.util.Vector {
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.Integer )
+					}, new java.util.Vector {
+						add( null )
+						add( true )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 50, 0, 0, true ) )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"alignmentX": 10.0f
+					"alignmentY": 7.0f
+					"rowHeight": 50
+					"rowMargin": 0
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "tableTeaMessMousePressed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonDelete"
+				"font": &SwingDerivedFont3 new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+				"text": new FormMessage( null, "TeacherMess.buttonDelete.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteTeaMess", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonSelect"
+				"font": &SwingDerivedFont4 new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+				"text": new FormMessage( null, "TeacherMess.buttonSelect.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selectTeaMess", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldTno"
+				"font": &SwingDerivedFont5 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldTname"
+				"font": &SwingDerivedFont6 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBoxTetile"
+				"font": &SwingDerivedFont7 new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+				"model": &DefaultComboBoxModel0 new javax.swing.DefaultComboBoxModel {
+					selectedItem: "--请选择--"
+					addElement( "--请选择--" )
+					addElement( "教授" )
+					addElement( "副教授" )
+					addElement( "讲师" )
+					addElement( "助教" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonAdd"
+				"font": #SwingDerivedFont3
+				"text": new FormMessage( null, "TeacherMess.buttonAdd.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AddTea", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "TeacherMess.label5.text" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonUpdate"
+				"font": #SwingDerivedFont4
+				"text": new FormMessage( null, "TeacherMess.buttonUpdate.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "updateTeamess", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": new FormMessage( null, "TeacherMess.label6.text" )
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "TeacherMess.label4.text" )
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": new FormMessage( null, "TeacherMess.label7.text" )
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": new FormMessage( null, "TeacherMess.label8.text" )
+				"font": #SwingDerivedFont2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldTno2"
+				"font": #SwingDerivedFont5
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldTname2"
+				"font": #SwingDerivedFont6
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBoxTetile2"
+				"font": #SwingDerivedFont7
+				"model": #DefaultComboBoxModel0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": new FormMessage( null, "TeacherMess.label9.text" )
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldTSalary"
+				"font": #SwingDerivedFont6
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": new FormMessage( null, "TeacherMess.label10.text" )
+				"font": #SwingDerivedFont1
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 1035, 850 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
